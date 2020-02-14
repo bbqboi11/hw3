@@ -7,7 +7,7 @@ var x = 0;
 var h = 10;
 var cx;
 var cy;
-
+//grass
 function draw() {
   cx = x + random(-10, 10);
   cy = height - 10 - random(h);
@@ -21,10 +21,13 @@ function draw() {
     x = random(10);
     h = h + 3;
   }
+  //flowers
   if (h > 100) {
     fill(random(147,255), 111, 173);
     circle(cx,cy,random(10,20))
   }
+  
+ //start the mower
   if (mouseIsPressed) {
     fill(44, 136, 150);
     rect(0, 0, width, height - 15);
